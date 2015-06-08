@@ -1,19 +1,18 @@
 ﻿<Properties StartupItem="iOS/SocialBanks.iOS.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus_5_API_22_x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/MainActivity.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 4 (KitKat)" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SocialBanks/SocialBanks.cs">
     <Files>
-      <File FileName="FMBitcoinLib/TransactionHelper.cs" Line="1" Column="1" />
-      <File FileName="FMBitcoinLib.Tests/Test.cs" Line="1" Column="1" />
-      <File FileName="iOS/Main.cs" Line="1" Column="1" />
-      <File FileName="SocialBanks/SocialBanks.cs" Line="7" Column="1" />
-      <File FileName="SocialBanks/Pages/RootPage.cs" Line="1" Column="1" />
-      <File FileName="iOS/AppDelegate.cs" Line="1" Column="1" />
-      <File FileName="../../../../../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="1" Column="1" />
-      <File FileName="Droid/MainActivity.cs" Line="28" Column="1" />
+      <File FileName="SocialBanks/SocialBanks.cs" Line="23" Column="3" />
+      <File FileName="SocialBanks/Pages/RootPage.cs" Line="16" Column="31" />
+      <File FileName="SocialBanks/Pages/LoginPage.cs" Line="20" Column="35" />
+      <File FileName="SocialBanks/ViewModel/LoginViewModel.cs" Line="43" Column="21" />
+      <File FileName="SocialBanks/ViewModel/BaseViewModel.cs" Line="10" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/fabriciomatos/Dropbox/Empreendimentos/13-SocialBanks/git/xamarin-wallet/SocialBanks/Droid/MainActivity.cs" line="20" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
