@@ -6,9 +6,13 @@
     <SharedGUID>{79D226CE-10FA-4A83-8D64-FE94C849492D}</SharedGUID>
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
-    <Import_RootNamespace>SocialBanks</Import_RootNamespace>
+    <Import_RootNamespace>SocialBanks.Shared</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)SocialBanks.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\RootPage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Pages\" />
   </ItemGroup>
 </Project>

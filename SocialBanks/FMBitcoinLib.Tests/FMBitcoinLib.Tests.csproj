@@ -29,9 +29,21 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Test.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FMBitcoinLib\FMBitcoinLib.csproj">
+      <Project>{C93AE398-0882-4427-9931-41470BDDD8FE}</Project>
+      <Name>FMBitcoinLib</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

@@ -7,8 +7,11 @@ namespace FMBitcoinLib.Tests
 	public class Test
 	{
 		[Test ()]
-		public void TestCase ()
+		public void TransactionHelperClassExists ()
 		{
+			var transHelper = new TransactionHelper ();
+
+			Assert.IsNotNull (transHelper);
 		}
 	}
 }

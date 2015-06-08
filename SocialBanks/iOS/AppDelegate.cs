@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 
+using SocialBanks.Shared;
+
 using Foundation;
 using UIKit;
 
@@ -14,7 +16,7 @@ namespace SocialBanks.iOS
 		{
 			global::Xamarin.Forms.Forms.Init ();
 
-			LoadApplication (new App ());
+			LoadApplication (new AppSocialBanks ());
 
 			return base.FinishedLaunching (app, options);
 		}

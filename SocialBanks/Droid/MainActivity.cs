@@ -8,6 +8,8 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 
+using SocialBanks.Shared;
+
 namespace SocialBanks.Droid
 {
 	[Activity (Label = "SocialBanks.Droid", Icon = "@drawable/icon", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
@@ -19,7 +21,7 @@ namespace SocialBanks.Droid
 
 			global::Xamarin.Forms.Forms.Init (this, bundle);
 
-			LoadApplication (new App ());
+			LoadApplication (new AppSocialBanks ());
 		}
 	}
 }

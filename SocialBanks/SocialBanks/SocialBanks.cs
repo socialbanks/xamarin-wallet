@@ -1,13 +1,16 @@
 ﻿using System;
 
 using Xamarin.Forms;
+using SocialBanks.Shared.Pages;
 
-namespace SocialBanks
+namespace SocialBanks.Shared
 {
-	public class App : Application
+	public class AppSocialBanks : Application
 	{
-		public App ()
+		public AppSocialBanks ()
 		{
+			MainPage = new RootPage();
+/*
 			// The root page of your application
 			MainPage = new ContentPage {
 				Content = new StackLayout {
@@ -20,6 +23,7 @@ namespace SocialBanks
 					}
 				}
 			};
+			*/
 		}
 
 		protected override void OnStart ()

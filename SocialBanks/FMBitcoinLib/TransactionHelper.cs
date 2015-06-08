@@ -2,9 +2,9 @@
 
 namespace FMBitcoinLib
 {
-	public class MyClass
+	public class TransactionHelper
 	{
-		public MyClass ()
+		public TransactionHelper ()
 		{
 		}
 	}
