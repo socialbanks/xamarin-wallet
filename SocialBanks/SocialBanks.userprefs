@@ -1,12 +1,12 @@
 ﻿<Properties StartupItem="iOS/SocialBanks.iOS.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 4 (KitKat)" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="SocialBanks/SocialBanks.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6.8.3" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SocialBanks/Pages/RootPage.cs">
     <Files>
-      <File FileName="SocialBanks/SocialBanks.cs" Line="23" Column="3" />
-      <File FileName="SocialBanks/Pages/RootPage.cs" Line="16" Column="31" />
-      <File FileName="SocialBanks/Pages/LoginPage.cs" Line="20" Column="35" />
+      <File FileName="SocialBanks/SocialBanks.cs" Line="28" Column="3" />
+      <File FileName="SocialBanks/Pages/RootPage.cs" Line="14" Column="4" />
+      <File FileName="SocialBanks/Pages/LoginPage.cs" Line="44" Column="1" />
       <File FileName="SocialBanks/ViewModel/LoginViewModel.cs" Line="43" Column="21" />
-      <File FileName="SocialBanks/ViewModel/BaseViewModel.cs" Line="10" Column="5" />
+      <File FileName="SocialBanks/ViewModel/BaseViewModel.cs" Line="11" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
