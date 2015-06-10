@@ -18,6 +18,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Pages\MainPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\MenuMasterPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\AccountsPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\ProfilePage.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Pages\" />

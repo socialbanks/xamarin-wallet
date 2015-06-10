@@ -3,9 +3,9 @@ using Xamarin.Forms;
 
 namespace SocialBanks.Shared
 {
-	public class AccountsPage : ContentPage
+	public class ProfilePage : ContentPage
 	{
-		public AccountsPage ()
+		public ProfilePage ()
 		{
 			this.BackgroundColor = AppStyle.DesktopAreaColor;
 
@@ -15,7 +15,7 @@ namespace SocialBanks.Shared
 					new Label {
 						TextColor = AppStyle.TextColor,
 						XAlign = TextAlignment.Center,
-						Text = "Hello, I'm Accounts Page!"
+						Text = "Hello, I'm Profile Page!"
 					}
 				}
 			};

@@ -1,36 +1,38 @@
 ﻿using System;
 using Xamarin.Forms;
+using System.Threading.Tasks;
 
 namespace SocialBanks.Shared
 {
 	public class MenuMasterPage : ContentPage
 	{
 		public const string TitleText = "Menu";
-		private Page DetailPage;
 		private MasterDetailPage RootPage;
 
-		public MenuMasterPage (MasterDetailPage rootPage, Page detailPage)
+		private ListView MenuListView;
+		private MenuItem[] MenuItems;
+
+		public MenuMasterPage (MasterDetailPage rootPage)
 		{
-			if (detailPage == null)
-				throw new Exception ("ERROR: MenuMasterPage can't have a null detailPage");
+			//if (detailPage == null)
+			//	throw new Exception ("ERROR: MenuMasterPage can't have a null detailPage");
 			if (rootPage == null)
 				throw new Exception ("ERROR: MenuMasterPage can't have a null rootPage");
 
-			this.DetailPage = detailPage;
-			this.RootPage = rootPage;
+			//this.DetailPage = detailPage;
+			RootPage = rootPage;
 
-			this.Title = TitleText;
-			this.BackgroundColor = Color.White;
-			this.Icon = Device.OS == TargetPlatform.iOS ? "menu.png" : null;
+			Title = TitleText;
+			BackgroundColor = Color.White;
+			Icon = Device.OS == TargetPlatform.iOS ? "menu.png" : null;
+			BuildListView ();
 
 			this.Content = new StackLayout {
 				Children = {
 					BuildHeader(), 
-					BuildListView()
+					MenuListView
 				}
 			};
-
-
 
 		}
 
@@ -44,52 +46,70 @@ namespace SocialBanks.Shared
 			};
 		}
 
-		private View BuildListView() {
+		private ListView BuildListView() {
 
 			// Assemble an array of NamedColor objects.
-			MenuItem[] menuItems = 
-			{
-				new MenuItem { Index = 0, Text = "My Accounts" },
-				new MenuItem { Index = 1, Text = "Profile" },
-				new MenuItem { Index = 2, Text = "Logout" },
-			};
+			MenuItems = new MenuItem[3];
+			MenuItems [0] = new MenuItem { Index = 0, Text = "My Accounts" };
+			MenuItems [1] = new MenuItem { Index = 1, Text = "Profile" };
+			MenuItems [2] = new MenuItem { Index = 2, Text = "Logout" };
 
 
 			// Create ListView for the master page.
-			var listView = new ListView {
+			MenuListView = new ListView {
 				HasUnevenRows = true,
 				ItemTemplate = new DataTemplate (typeof(MenuViewCell)),
-				ItemsSource = menuItems,
+				ItemsSource = MenuItems,
 				SeparatorColor = Color.FromHex ("#ddd"),
 			};
 
 			// Define a selected handler for the ListView.
-			listView.ItemSelected += (sender, args) =>
+			MenuListView.ItemSelected += (sender, args) =>
 			{
 				var menuItem = args.SelectedItem as MenuItem;
 
 				switch (menuItem.Index) 
 				{
 					case 0: 
-						this.DetailPage.BindingContext = menuItem;
+						RootPage.Detail = new NavigationPage(new AccountsPage()) 
+						{
+							BarBackgroundColor = AppStyle.BackgroundColor,
+							BarTextColor = Color.White
+						};
+						RootPage.IsPresented = false;
 						break;
 					case 1:
-						this.DetailPage.BindingContext = menuItem;
+						RootPage.Detail = new NavigationPage(new ProfilePage()) 
+						{
+							BarBackgroundColor = AppStyle.BackgroundColor,
+							BarTextColor = Color.White
+						};
+						RootPage.IsPresented = false;
 						break;
 					case 2:
-						this.DetailPage.BindingContext = menuItem;
+						RootPage.IsPresented = false;
+						Logout();
 						break;
 				}
 
-
-				// Show the detail page.
-				this.RootPage.IsPresented = false;
 			};
 
 			// Initialize the ListView selection.
-			listView.SelectedItem = menuItems[0];
+			MenuListView.SelectedItem = MenuItems[0];
 
-			return listView;
+			return MenuListView;
+		}
+
+		public void Logout ()
+		{
+			//TODO Logout - Clear authentication and private data
+
+			//After login returns to the AccountsPage (the default item)
+			MenuListView.SelectedItem = MenuItems[0];
+
+			var loginPage = new LoginPage();
+			Navigation.PushModalAsync(loginPage);
+
 		}
 	}
 
