@@ -1,18 +1,16 @@
 ﻿<Properties StartupItem="iOS/SocialBanks.iOS.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6.8.3" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="SocialBanks/Pages/RootPage.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SocialBanks/AppStyle.cs">
     <Files>
-      <File FileName="SocialBanks/SocialBanks.cs" Line="28" Column="3" />
-      <File FileName="SocialBanks/Pages/RootPage.cs" Line="14" Column="4" />
-      <File FileName="SocialBanks/Pages/LoginPage.cs" Line="44" Column="1" />
-      <File FileName="SocialBanks/ViewModel/LoginViewModel.cs" Line="43" Column="21" />
-      <File FileName="SocialBanks/ViewModel/BaseViewModel.cs" Line="11" Column="2" />
+      <File FileName="SocialBanks/Pages/MainPage.cs" Line="19" Column="23" />
+      <File FileName="SocialBanks/Pages/MenuMasterPage.cs" Line="31" Column="6" />
+      <File FileName="SocialBanks/Pages/AccountsPage.cs" Line="11" Column="4" />
+      <File FileName="SocialBanks/Pages/LoginPage.cs" Line="21" Column="4" />
+      <File FileName="SocialBanks/AppStyle.cs" Line="8" Column="42" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/fabriciomatos/Dropbox/Empreendimentos/13-SocialBanks/git/xamarin-wallet/SocialBanks/Droid/MainActivity.cs" line="20" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

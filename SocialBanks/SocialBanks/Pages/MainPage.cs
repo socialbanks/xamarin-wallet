@@ -6,25 +6,23 @@ using Xamarin.Forms;
 
 namespace SocialBanks.Shared
 {
-	public class MainPage : ContentPage
+	public class MainPage : MasterDetailPage
 	{
 		public MainPage ()
 		{
 			this.BackgroundColor = AppStyle.BackgroundColor;
 
-			ShowLoginDialog();    
-
-
-			Content = new StackLayout {
-				VerticalOptions = LayoutOptions.Center,
-				Children = {
-					new Label {
-						TextColor = AppStyle.TextColor,
-						XAlign = TextAlignment.Center,
-						Text = "Hello, I'm MainPage!"
-					}
-				}
+			// Create the detail page using NamedColorPage and wrap it in a
+			// navigation page to provide a NavigationBar and Toggle button
+			this.Detail = new NavigationPage(new AccountsPage()) 
+			{
+				BarBackgroundColor = AppStyle.BackgroundColor
 			};
+
+			// Create the master page with the ListView of menu items
+			this.Master = new MenuMasterPage(this, this.Detail);
+
+//			ShowLoginDialog();    
 
 		}
 
