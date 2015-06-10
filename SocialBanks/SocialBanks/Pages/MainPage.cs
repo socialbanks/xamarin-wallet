@@ -16,7 +16,8 @@ namespace SocialBanks.Shared
 			// navigation page to provide a NavigationBar and Toggle button
 			this.Detail = new NavigationPage(new AccountsPage()) 
 			{
-				BarBackgroundColor = AppStyle.BackgroundColor
+				BarBackgroundColor = AppStyle.BackgroundColor,
+				BarTextColor = Color.White
 			};
 
 			// Create the master page with the ListView of menu items
