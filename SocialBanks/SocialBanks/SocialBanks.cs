@@ -8,7 +8,7 @@ namespace SocialBanks.Shared
 	{
 		public AppSocialBanks ()
 		{
-			MainPage = new RootPage();
+			this.MainPage = new MainPage();
 		}
 
 		protected override void OnStart ()

@@ -2,11 +2,13 @@
 
 using Xamarin.Forms;
 
+//http://developer.xamarin.com/guides/cross-platform/xamarin-forms/controls/pages/
+
 namespace SocialBanks.Shared
 {
-	public class RootPage : ContentPage
+	public class MainPage : ContentPage
 	{
-		public RootPage ()
+		public MainPage ()
 		{
 			this.BackgroundColor = AppStyle.BackgroundColor;
 
@@ -19,7 +21,7 @@ namespace SocialBanks.Shared
 					new Label {
 						TextColor = AppStyle.TextColor,
 						XAlign = TextAlignment.Center,
-						Text = "Hello, I'm RootPage!"
+						Text = "Hello, I'm MainPage!"
 					}
 				}
 			};
