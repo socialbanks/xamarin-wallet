@@ -22,6 +22,9 @@ namespace SocialBanks.Droid
 			global::Xamarin.Forms.Forms.Init (this, bundle);
 
 			LoadApplication (new AppSocialBanks ());
+
+			AppSocialBanks.ScreenWidth = (int)(Resources.DisplayMetrics.WidthPixels / Resources.DisplayMetrics.Density);
+			AppSocialBanks.ScreenHeight = (int)(Resources.DisplayMetrics.HeightPixels / Resources.DisplayMetrics.Density);
 		}
 	}
 }

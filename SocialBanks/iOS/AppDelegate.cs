@@ -18,6 +18,9 @@ namespace SocialBanks.iOS
 
 			LoadApplication (new AppSocialBanks ());
 
+			AppSocialBanks.ScreenWidth = (int)UIScreen.MainScreen.Bounds.Width;
+			AppSocialBanks.ScreenHeight = (int)UIScreen.MainScreen.Bounds.Height;
+
 			return base.FinishedLaunching (app, options);
 		}
 	}

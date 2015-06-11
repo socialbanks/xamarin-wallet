@@ -19,11 +19,20 @@
     <Compile Include="$(MSBuildThisFileDirectory)Pages\MenuMasterPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\AccountsPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\ProfilePage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\BaseObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Wallet.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\ISocialBanksAPI.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\SocialBanksAPIMock.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\MenuViewCell.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\AccountViewCell.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\ServiceProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Pages\" />
     <Folder Include="$(MSBuildThisFileDirectory)Views\" />
     <Folder Include="$(MSBuildThisFileDirectory)ViewModel\" />
     <Folder Include="$(MSBuildThisFileDirectory)Helpers\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Services\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Model\" />
   </ItemGroup>
 </Project>

@@ -6,6 +6,9 @@ namespace SocialBanks.Shared
 {
 	public class AppSocialBanks : Application
 	{
+		static public int ScreenWidth;
+		static public int ScreenHeight;
+
 		public AppSocialBanks ()
 		{
 			this.MainPage = new MainPage();

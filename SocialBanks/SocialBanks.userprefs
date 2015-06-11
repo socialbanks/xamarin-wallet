@@ -1,4 +1,4 @@
-﻿<Properties StartupItem="iOS/SocialBanks.iOS.csproj">
+﻿<Properties StartupItem="Droid/SocialBanks.Droid.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6.8.3" />
   <MonoDevelop.Ide.Workbench ActiveDocument="SocialBanks/AppStyle.cs">
     <Files>
