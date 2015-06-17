@@ -24,7 +24,8 @@ namespace SocialBanks.Shared
 
 			Title = TitleText;
 			BackgroundColor = Color.White;
-			Icon = Device.OS == TargetPlatform.iOS ? "menu.png" : null;
+			//Icon = Device.OS == TargetPlatform.iOS ? "menu.png" : null;
+			Icon = "menu.png";
 			BuildListView ();
 
 			this.Content = new StackLayout {

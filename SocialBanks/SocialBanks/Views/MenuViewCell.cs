@@ -7,19 +7,6 @@ namespace SocialBanks.Shared
 	{
 		public MenuViewCell ()
 		{
-			/*
-			var vetProfileImage = new CircleImage {
-				BorderColor = App.BrandColor,
-				BorderThickness = 2,
-				HeightRequest = 50,
-				WidthRequest = 50,
-				Aspect = Aspect.AspectFill,
-				HorizontalOptions = LayoutOptions.Center,
-				VerticalOptions = LayoutOptions.Center,
-			};
-			vetProfileImage.SetBinding (Image.SourceProperty, "ImageSource");
-			*/
-
 			var textLabel = new Label () {
 				FontFamily = "HelveticaNeue-Medium",
 				FontSize = 18,

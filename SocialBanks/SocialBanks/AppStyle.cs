@@ -1,4 +1,5 @@
 ﻿using System;
+using Xamarin.Forms;
 
 namespace SocialBanks.Shared
 {
@@ -15,7 +16,12 @@ namespace SocialBanks.Shared
 		public static Xamarin.Forms.Color TextColor = Xamarin.Forms.Color.White;
 		public static Xamarin.Forms.Color AdditionalButtonBackgroundColor = Helpers.Color.FromHex(DARK_GRAY).ToFormsColor();
 		public static Xamarin.Forms.Color BalanceColor = Helpers.Color.FromHex(GREEN).ToFormsColor();
-		public static string DefaultFontName = "DINCondensed-Bold";
+		public static string DefaultFontName {
+			get {
+				//return Device.OS == TargetPlatform.iOS ? "DINCondensed-Bold" : "Droid Sans Mono";
+				return "DINCondensed-Bold";
+			}
+		}
 	}
 }
 
